@@ -1,0 +1,8 @@
+.idea
+.DS_Store
+build
+downloads
+node_modules
+screenshot
+*.zip
+npm-debug.log
