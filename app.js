@@ -9,6 +9,10 @@ import base64Img from "base64-img"
 const app = new Koa()
 const router = new Router()
 
+const jsonParse = function (obj) {
+    return JSON.stringify(obj)
+}
+
 app.use(async (ctx, next) => {
     try {
         await next()
@@ -51,4 +55,4 @@ router
     })
 
 app.use(router.routes());
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 8000);
